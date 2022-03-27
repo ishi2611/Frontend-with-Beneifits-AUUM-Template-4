@@ -71,7 +71,8 @@ hr {
 }
 /* Navigation */
 #menu {
-	opacity: 0.7;
+	/* opacity: 0.7; */
+	z-index: 1000;
 	padding: 20px;
 	transition: all 0.8s;
 }
@@ -81,7 +82,8 @@ hr {
 }
 #menu a.navbar-brand {
 	font-size: 40px;
-	color: rgba(255,255,255,0.7);
+	/* color: rgba(255,255,255,0.7); */
+	color: #000;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -124,22 +126,25 @@ hr {
 .btn-custom {
 	text-transform: uppercase;
 	color: #414a52;
-	background-color: #54d0dd;
+	/* background-color: #ce2875; */
+	background: rgb(140,190,220);
+	background: linear-gradient(90deg, rgba(140,190,220,1) 0%, rgba(251,152,227,1) 100%);
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
 	font-size: 16px;
+	font-weight: 700;
 	border-radius: 0;
 	margin-top: 20px;
 	transition: all 0.3s;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	color: #54d0dd;
+	color: #ce2875;
 	background-color: #414a52;
 }
 .btn-default {
 	text-transform: uppercase;
-	color: #54d0dd;
+	color: #ce2875;
 	background-color: #414a52;
 	border: 0;
 	padding: 14px 20px;
@@ -148,10 +153,12 @@ hr {
 	border-radius: 0;
 	margin-top: 20px;
 	transition: all 0.3s;
+	border-radius: 7px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	color: #54d0dd;
+	color: #ce2875;
 	background-color: #343b42;
+	border-radius: 25px;
 }
 /* Header Section */
 .intro {
@@ -191,11 +198,16 @@ header .intro-text {
 #about {
 	padding: 120px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54d0dd+0,54d0dd+0,54d0dd+0,7fdce6+0,54d0dd+100 */
-	background: rgb(84,208,221); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#54d0dd', GradientType=0 ); /* IE6-9 */
+	/* background: rgb(84,208,221); Old browsers */
+	/* background: -moz-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%);  */
+	/* background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%);  */
+	/* background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#54d0dd', GradientType=0 ); IE6-9 */
+background: url(../img/background.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+/* background: rgb(140,190,220);
+background: linear-gradient(90deg, rgba(140,190,220,1) 0%, rgba(251,152,227,1) 100%); */
 }
 #about .about-text {
 	margin-left: 10px;
@@ -211,14 +223,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', end
 #portfolio {
 	padding: 120px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54d0dd+0,54d0dd+0,54d0dd+0,71777d+0,414a52+100 */
-	background: rgb(84,208,221); /* Old browsers */
+	/* background: rgb(84,208,221); 
 	background: -moz-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#414a52', GradientType=0 ); /* IE6-9 */
+	/* background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%);  */
+	/* background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%);  */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#414a52', GradientType=0 );  */ 
+background: url('../img/career2.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
 }
 #portfolio h2 {
-	color: #54d0dd;
+	color: #000;
+	font-size: 28px;
 }
 .categories {
 	padding-bottom: 30px;
@@ -236,14 +252,18 @@ ol.type li a {
 	color: #54d0dd;
 	padding: 12px 24px;
 	text-transform: uppercase;
+	border-radius: 7px;
 }
 ol.type li a.active {
 	background: #54d0dd;
 	color: #414a52;
+	border-radius: 25px;
 }
 ol.type li a:hover {
 	background: #54d0dd;
 	color: #414a52;
+	border-radius: 0;
+	transition: 0.5s;
 }
 .isotope-item {
 	z-index: 2
@@ -434,6 +454,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background: #343b42;
 	color: rgba(255,255,255,0.4);
 	}
+
+	.footer .socials{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		filter: invert(100%);
+	}
+	.socials li{
+		padding-left: 2rem;
+	}
 	
 	.footer > * {
 	flex:  1 100%;
@@ -445,9 +476,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 	
 	h2 {
-	font-weight: 400;
-	font-size: 15px;
-	color: #FFF;
+	font-weight: 700;
+	font-size: 25px;
+	color: #000;
+	}
+	.footer h2{
+		color: #fff;
+		font-weight: 500;
+		font-size: 20px;
 	}
 	
 	.footer ul {
